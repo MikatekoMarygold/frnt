@@ -1,0 +1,92 @@
+<nav></nav>
+  <a routerLink="/">Home</a>
+  <a routerLink="/properties">Properties</a>
+</nav>
+<router-outlet></router-outlet>
+
+
+<link rel="icon" href="favicon.ico" type="image/x-icon">
+
+<body style="background-color:powderblue;"></body>
+
+<div class="container">
+  <h2>Sign Up</h2>
+  <form>
+  
+    <input type="text" id="name" name="name" placeholder="Name" required>
+    
+    <input id="email" type="email" name="email" placeholder="Email" required>
+    
+    <input id="password" type="password" name="password" placeholder="password" required>
+    <button type="submit">Sign Up</button>
+  </form>
+</div>
+
+
+<div class="container">
+  <h2>Sign In</h2>
+  <form>
+    
+    <input id="email" type="email" name="email" placeholder="Email" required>
+    
+    <input id="password" type="password" name="password" placeholder="password" required>
+    <button type="submit">Sign In</button>
+  </form>
+</div>
+
+
+<div class="container">
+  <h2>Forgot Password</h2>
+  <form>
+    
+    <input id="email" type="email" name="email" placeholder="Email" required>
+    <button type="submit">Reset Password</button>
+  </form>
+</div>
+
+
+<div class="container">
+  <h2>AVAILABLE HOUSES</h2>
+  <ul>
+    <li *ngFor="let property of properties">
+      <h3>RDP HOUSE</h3>
+      <img src ="C:\Users\Mikateko\Pictures\rdp.jpg" alt="MIKATEKO KARANE" width="500" height="333" >
+      <p><strong>Location:</strong> MAMELODI EAST</p>
+      <p>2 BEDROOM, 1 BATHROOM, 2 PARKING</p>
+      <p>Price: R128 000</p>
+    </li>
+  </ul>
+</div>
+
+<div class="container"></div>
+  
+  <ul>
+    <li *ngFor="let property of properties">
+      <h3>BOND HOUSE</h3>
+    
+      <img src="pic_trulli.jpg" alt="SIDWELL" width="500" height="333">
+      <p><strong>Location:</strong> SOSHANGUVE</p>
+      <p>2 BEDROOM, 1 BATHROOM, 2 PARKING</p>
+      <p>Price: R370 000</p>
+    </li>
+  </ul>
+</div>
+
+<div class="container"></div>
+  
+  <ul>
+    <li *ngFor="let property of properties">
+      <h3>TOWN HOUSE</h3>
+      <img src="C:\Users\Mikateko\Pictures\townhouse.jpg" alt="DANIEL" width="500" height="333" >
+      <p><strong>Location:</strong>MONTANA</p>
+      <p>3 BEDROOM, 1 BATHROOM, 2 PARKING</p>
+      <p>Price: R570 400</p>
+    </li>
+  </ul>
+</div>
+
+
+
+
+
+
